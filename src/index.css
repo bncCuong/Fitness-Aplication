@@ -13,7 +13,17 @@ body,
     margin: 0;
     box-sizing: border-box;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     font-family: 'DM Sans', sans-serif;
     @apply text-gray-500;
+}
+
+@layer utilities {
+    .abstractwaves::before {
+        @apply absolute -top-20 -left-20 z-[1] content-abstractwaves;
+    }
+
+    .sparkles::before {
+        @apply absolute left-36 -bottom-20 z-[1] content-sparkles;
+    }
 }
